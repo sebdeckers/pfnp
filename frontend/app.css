@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Share:400,700italic);
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 25px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48pt;
+  margin: 10px 0;
+  font-family: 'Share', cursive;
+}
+
+header a {
+  color: white;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+header a:active {
+  background-color: white;
+  color: orange;
+}
+
+main {
+  flex: auto;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+img, iframe {
+  width: 100%;
+}
+
+article h2 {
+  color: steelblue;
+  text-transform: uppercase;
+  font-family: serif;
+}
