@@ -15,7 +15,7 @@ Content for the PFNP class taught at General Assembly Singapore.
 - [Session IV: Putting It All Together](4.md)
 
 ## Examples
-- [Front-End](./example)
+- [Front-End](./frontend)
 - Back-End *(Coming Soon)*
 
 ## Contact
