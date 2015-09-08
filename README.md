@@ -15,8 +15,8 @@ Content for the PFNP class taught at General Assembly Singapore.
 - [Session IV: Putting It All Together](4.md)
 
 ## Examples
-- [Front-End](./frontend)
-- Back-End *(Coming Soon)*
+- [Front-End](./src)
+- [Back-End] *(Coming Soon)*
 
 ## Contact
 Create a [new issue](https://github.com/cbas/pfnp/issues/new) for this repository with any questions, suggestions, or feedback on the class.
