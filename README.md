@@ -16,7 +16,7 @@ Content for the PFNP class taught at General Assembly Singapore.
 
 ## Examples
 - [Front-End](./src)
-- [Back-End] *(Coming Soon)*
+- Back-End *(Coming Soon)*
 
 ## Contact
 Create a [new issue](https://github.com/cbas/pfnp/issues/new) for this repository with any questions, suggestions, or feedback on the class.
