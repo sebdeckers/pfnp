@@ -1,0 +1,70 @@
+{
+  "name": "pfnp",
+  "version": "1.0.0",
+  "description": "Programming For Non-Programmers",
+  "scripts": {
+    "dev": "npm run watch & http-server dist -c-1 -o",
+    "start": "npm run build && http-server dist",
+    "test": "npm run lint && npm run test-js",
+    "test-js": "mocha",
+    "lint": "npm run lint-js && npm run lint-css && npm run lint-html",
+    "lint-js": "standard",
+    "lint-css": "postcss --config postcss.json",
+    "lint-html": "htmllint src/**/*.html",
+    "build": "npm run clean && npm run build-css && npm run build-html && npm run build-js",
+    "build-css": "cssnext src/app.css dist/app.css",
+    "build-html": "cpy src/**/*.html dist",
+    "build-js": "browserify src/app.js --transform babelify > dist/app.js",
+    "clean": "rimraf dist",
+    "prepublish": "npm run build",
+    "watch": "npm run watch-css & npm run watch-html & npm run watch-js",
+    "watch-css": "cssnext --verbose --watch --sourcemap src/app.css dist/app.css",
+    "watch-html": "watch \"npm run build-html\" src",
+    "watch-js": "watchify src/app.js --transform babelify --outfile dist/app.js -dv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbas/pfnp.git"
+  },
+  "keywords": [
+    "pfnp",
+    "tutorial",
+    "programming",
+    "learning",
+    "howto"
+  ],
+  "author": "Sebastiaan Deckers <seb@ninja.sg>",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/cbas/pfnp/issues"
+  },
+  "homepage": "https://github.com/cbas/pfnp#readme",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
+    "chai": "^3.2.0",
+    "cpy": "^3.4.0",
+    "htmllint-cli": "0.0.4",
+    "mocha": "^2.3.2",
+    "postcss-cli": "^2.1.0",
+    "postcss-reporter": "^1.1.0",
+    "rimraf": "^2.4.3",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0",
+    "standard": "^5.2.1",
+    "stylelint": "^1.0.1",
+    "watch": "^0.16.0",
+    "watchify": "^3.4.0"
+  },
+  "dependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "cssnext": "^1.8.4",
+    "dom4": "^1.4.6",
+    "http-server": "^0.8.0"
+  }
+}

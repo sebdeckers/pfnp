@@ -1,0 +1,9 @@
+{
+    // names of npm modules to load into htmllint
+    "plugins": [],
+
+    "doctype-first": true,
+    "doctype-html5": true,
+    "indent-style": "spaces",
+    "indent-width": 2
+}
