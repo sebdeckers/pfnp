@@ -28,6 +28,7 @@ h1 {
   padding: 0;
   margin: 0;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   text-align: center;
 }
 
@@ -41,10 +42,11 @@ h1 {
 li {
   display: inline-block;
   width: 300px;
+  max-width: calc(100% - 20px);
   height: 150px;
   border: 5px double black;
   background-color: rgba(0, 0, 0, 0.1);
-  margin: 20px;
+  margin: 10px;
   overflow: hidden;
   text-align: left;
   padding: 25px 5px 5px 80px;
