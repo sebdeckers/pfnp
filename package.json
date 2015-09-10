@@ -70,6 +70,7 @@
     "dom4": "^1.4.6",
     "express": "^4.13.3",
     "http-server": "^0.8.0",
+    "isomorphic-fetch": "^2.1.1",
     "rimraf": "^2.4.3"
   }
 }

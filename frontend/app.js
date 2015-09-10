@@ -1,8 +1,8 @@
-/* global fetch:true */
 /* eslint-disable no-unused-vars */
 import babel from 'babel/polyfill'
 import dom4 from 'dom4'
 /* eslint-disable no-unused-vars */
+import fetch from 'isomorphic-fetch'
 
 document.query('#reload')
   .addEventListener('click', async event => {
