@@ -1,7 +1,10 @@
 /* global fetch:true */
-import babel from 'babel/polyfill' // eslint-disable-line no-unused-vars
+/* eslint-disable no-unused-vars */
+import babel from 'babel/polyfill'
+import dom4 from 'dom4'
+/* eslint-disable no-unused-vars */
 
-document.querySelector('#reload')
+document.query('#reload')
   .addEventListener('click', async event => {
     const response = await fetch('./friends')
     const friends = await response.json()
@@ -9,7 +12,7 @@ document.querySelector('#reload')
       const listItem = document.createElement('li')
       listItem.innerText = name
       listItem.dataset.id = id
-      document.querySelector('#friends')
+      document.query('#friends')
         .appendChild(listItem)
     }
   })
