@@ -16,7 +16,6 @@
     "build-html": "cpy src/**/*.html dist",
     "build-js": "browserify src/app.js --transform babelify > dist/app.js",
     "clean": "rimraf dist",
-    "prepublish": "npm run build",
     "watch": "npm run watch-css & npm run watch-html & npm run watch-js",
     "watch-css": "cssnext --verbose --watch --sourcemap src/app.css dist/app.css",
     "watch-html": "watch \"npm run build-html\" src",
