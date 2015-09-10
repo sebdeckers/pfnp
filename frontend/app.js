@@ -1,4 +1,5 @@
-import babel from 'babel/polyfill'
+/* global fetch:true */
+import babel from 'babel/polyfill' // eslint-disable-line no-unused-vars
 
 document.querySelector('#reload')
   .addEventListener('click', async event => {
