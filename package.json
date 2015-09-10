@@ -46,17 +46,13 @@
     "parser": "babel-eslint"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-eslint": "^4.1.1",
     "chai": "^3.2.0",
-    "cpy": "^3.4.0",
     "htmllint-cli": "0.0.4",
     "mocha": "^2.3.2",
     "node-inspector": "^0.12.3",
     "nodemon": "^1.4.1",
     "postcss-cli": "^2.1.0",
     "postcss-reporter": "^1.1.0",
-    "rimraf": "^2.4.3",
     "sinon": "^1.16.1",
     "sinon-chai": "^2.8.0",
     "standard": "^5.2.1",
@@ -65,11 +61,15 @@
     "watchify": "^3.4.0"
   },
   "dependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
     "babelify": "^6.3.0",
     "browserify": "^11.0.1",
+    "cpy": "^3.4.0",
     "cssnext": "^1.8.4",
     "dom4": "^1.4.6",
     "express": "^4.13.3",
-    "http-server": "^0.8.0"
+    "http-server": "^0.8.0",
+    "rimraf": "^2.4.3"
   }
 }
