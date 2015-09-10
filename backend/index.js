@@ -16,7 +16,6 @@ app.get('/friends/:id', (req, res) => {
   else res.status(404).end()
 })
 
-const server = app.listen(process.env.PORT || 3000, function () {
-  const {port} = server.address()
-  console.log(`Listening on port ${port}`)
-})
+const server = app.listen(process.env.PORT || 3000, () =>
+  console.log(`Listening on port ${server.address().port}`)
+)
