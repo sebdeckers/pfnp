@@ -3,7 +3,7 @@
     "stylelint",
     "postcss-reporter"
   ],
-  "input": "src/app.css",
+  "input": "frontend/app.css",
   "output": "postcss.log",
   "stylelint": {
     "rules": {
