@@ -1,3 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
-  color: crimson;
+  flex: none;
+  font-family: monospace;
+  text-align: center;
+}
+
+#friends {
+  flex: auto;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  text-align: center;
+}
+
+#friends:empty::before {
+  /* Unicode Emoji: http://apps.timwhitlock.info/emoji/tables/unicode */
+  content: '\1F46B';
+  font-size: 128px;
+  display: block;
+}
+
+li {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  border: 5px double black;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  text-align: left;
+  padding: 25px 5px 5px 80px;
+  position: relative;
+  font-family: cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+li:before {
+  content: '\1F603';
+  font-size: 128px;
+  font-family: sans-serif;
+  font-weight: normal;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+  z-index: -1;
+}
+li:after {
+  content: 'Hi, I am';
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: normal;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+}
+li[data-id='1']:before { content: '\1F469'; } /* Alice: Woman */
+li[data-id='2']:before { content: '\1F46E'; } /* Bob: Boy */
+li[data-id='3']:before { content: '\1F467'; } /* Carol: Girl */
+li[data-id='4']:before { content: '\1F468'; } /* Dave: Man */
+li[data-id='5']:before { content: '\1F478'; } /* Eve:  */
+
+#reload {
+  flex: none;
+  height: 40px;
+  max-width: 300px;
+  align-self: center;
+  width: 100%;
+  margin: 10px;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  background: black;
+  border: none;
+  text-transform: uppercase;
+}
+#reload:active {
+  background: white;
+  color: black;
 }
