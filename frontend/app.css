@@ -72,11 +72,11 @@ li:after {
   left: 80px;
   top: 10px;
 }
-li[data-id='1']:before { content: '\1F469'; } /* Alice: Woman */
-li[data-id='2']:before { content: '\1F46E'; } /* Bob: Boy */
-li[data-id='3']:before { content: '\1F467'; } /* Carol: Girl */
-li[data-id='4']:before { content: '\1F468'; } /* Dave: Man */
-li[data-id='5']:before { content: '\1F478'; } /* Eve:  */
+li[data-id='1']:before { content: '\1F469'; }
+li[data-id='2']:before { content: '\1F46E'; }
+li[data-id='3']:before { content: '\1F467'; }
+li[data-id='4']:before { content: '\1F468'; }
+li[data-id='5']:before { content: '\1F478'; }
 
 #reload {
   flex: none;
