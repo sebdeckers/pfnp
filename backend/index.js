@@ -1,8 +1,20 @@
 import database from './database.json'
 
-var http = require('http')
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'})
-  res.end('Hello World')
-}).listen(1337, '127.0.0.1')
-console.log('Server running at http://127.0.0.1:1337/')
+import express from 'express'
+const app = express()
+
+app.get('/friends', (req, res) => {
+  res.json(database.friends)
+})
+
+app.get('/friends/:id', (req, res) => {
+  const byId = ({id}) => id === +req.params.id
+  const result = database.friends.find(byId)
+  if (result) res.json(result)
+  else res.status(404).end()
+})
+
+const server = app.listen(3000, function () {
+  const {port} = server.address()
+  console.log(`Listening on port ${port}`)
+})

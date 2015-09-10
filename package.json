@@ -69,6 +69,7 @@
     "browserify": "^11.0.1",
     "cssnext": "^1.8.4",
     "dom4": "^1.4.6",
+    "express": "^4.13.3",
     "http-server": "^0.8.0"
   }
 }
