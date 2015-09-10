@@ -10,7 +10,7 @@ document.query('#reload')
     const friends = await response.json()
     for (const {id, name} of friends) {
       const listItem = document.createElement('li')
-      listItem.innerText = name
+      listItem.textContent = name
       listItem.dataset.id = id
       document.query('#friends')
         .appendChild(listItem)
