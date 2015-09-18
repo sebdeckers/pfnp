@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "npm run watch & npm run server-dev",
     "start": "npm run build && npm run server-prod",
+    "deploy": "npm test && npm run build && surge dist --domain pfnp.surge.sh",
     "test": "npm run audit && npm run lint && npm run test-js",
     "test-js": "mocha",
     "server-dev": "node-inspector & nodemon --debug server.js",
@@ -59,6 +60,7 @@
     "sinon-chai": "^2.8.0",
     "standard": "^5.2.1",
     "stylelint": "^1.0.1",
+    "surge": "^0.14.4",
     "watch": "^0.16.0",
     "watchify": "^3.4.0"
   },
